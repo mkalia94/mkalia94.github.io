@@ -1,3 +1,9 @@
 theme: jekyll-theme-cayman
-title: Notes..
-descripiton: Python/Julia/LaTeX
+title: Notes
+description: Useful Python/Julia/LaTeX tips!
+
+navbar-links:
+  About Me: "Wandering between dynamical systems, computational neuroscience and data assimilation"
+  Resources:
+    - My project: "https://www.utwente.nl/en/eemcs/sacs/research/projects/projectpage-Kalia/"
+    - My work on a new homoclinic bifurcation: "https://arxiv.org/abs/1712.03212"
