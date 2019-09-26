@@ -14,7 +14,7 @@ A foolproof method is as follows:
 
 * Fire up the terminal and run `sudo add-apt-repository ppa:graphics-drivers/ppa` followed by `sudo apt-get update`. This allows the system to search for the latest drivers.
 * Then run `ubuntu-drivers devices`. The output should mention your graphic card and the recommended driver.
-* Install the driver by running `sudo apt-get install nvidia-driver-xxx nvidia-settings nvidia-prime` where `xxx` is the driver number recommended in the previous step. In my case this was `nvidia-driver-410` (ASUS GX531 running RTX 2070, as of April 01, 2019).
+* Install the driver by running `sudo apt-get install nvidia-driver-xxx nvidia-settings nvidia-prime` where `xxx` is the driver number recommended in the previous step. In my case this was `nvidia-driver-430` (ASUS GX531 running RTX 2070, as of September 24, 2019).
 * Reboot, if you're able to log in, run `nvidia-smi` in the terminal. If the output mentions the GPU ands the driver you installed, you are done!
     * If you enter a black screen on reboot, press `Ctrl+Shift+F2` to fire up `tty`. Use your login credentials and type 
     `sudo apt-get remove --purge nvidia*` followed by `sudo apt-get install --reinstall xorg xserver-xorg`.
@@ -24,10 +24,10 @@ A foolproof method is as follows:
 
 ## Step 2: Install CUDA
 
-Check the appropriate CUDA version for the driver installed in `Step 1` [here](https://docs.nvidia.com/deploy/cuda-compatibility/index.html). Follow the instructions to install from [the CUDA website](https://developer.nvidia.com/cuda-10.0-download-archive).
+Check the appropriate CUDA version for the driver installed in `Step 1` [here](https://docs.nvidia.com/deploy/cuda-compatibility/index.html). Follow the instructions to install from [the CUDA website](https://developer.nvidia.com/cuda-10.0-download-archive). If using Debian based distros, make sure to use the appropriate `.deb` files for installation. After installing CUDA with `apt-get`, also install `nvidia-cuda-toolkit` in the same way
 
 ## Step 3: Install cuDNN
-Get cuDNN from [here](https://developer.nvidia.com/cudnn) and follow the installation instructions.
+Get cuDNN from [here](https://developer.nvidia.com/cudnn) and follow the installation instructions. The copy-paste technique works best! 
 
 ## Final step: Get GPU dependent packages working!
 
@@ -52,4 +52,5 @@ and then running
 ```julia
 ] test CuArrays
 ```
-
+## Bypass all above methods using Docker
+I haven't tried this but it is recommended by folks at TensorFlow: https://www.tensorflow.org/install/docker
