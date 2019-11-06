@@ -1,0 +1,24 @@
+#  Syncing with Overleaf (free)
+
+Nowadays I collaborate with a few (too many) authors on Overleaf for a new paper I'm struggling to finish. To make matters worse, I have a free Overleaf account. An easy addition to my list of headaches.
+The workaround is to be disciplined in pulling and pushing. You don't want to have the following problem,
+```
+... o ---- o ---- A ---- B  origin/master (upstream work)
+                   \
+                    C  master (your work)
+```
+Here, two separate commits `B` and `C` were made on `remote` and `local` branches respectively. The branches have thus 'diverged'. According to [this StackOverflow post](https://stackoverflow.com/a/3278427), you can either rebase or merge the two branches. This didn't work for me.
+In the end, (as always with PhD students..) I had to ditch my local changes in favour of remote (my supervisor..) changes. This can be done by executing
+```
+ git reset --hard origin/master
+```
+So for next time, I'll be doing the following:
+1. Make sure I make no local changes when remote changes are made by executing `git pull` before every local change I want to make.
+2. Run `git log origin/master` to see all commits.
+3. The latest commit must correspond to my supervisor's. Run `git show HASH:main.tex > main_OLD.tex` where `HASH` refers to the commit hash of a relevant old local commit.
+4. Get `latexdiff` from [here](https://ctan.org/pkg/latexdiff). Copy it into the local directory if not already present. Run `cp main.tex latexdiff/main.tex && cp main_OLD.tex latexdiff/main_OLD.tex`.
+5. Make sure you have Perl installed. Now run `latexdiff -t UNDERLINE main_OLD.tex main.tex > main_DIFF.tex`. 
+6. Copy back to local directory by running  `cp ~/path/to/source/latexdiff/main_diff.tex ~/path/to/source/main_diff.tex`.
+7. Run `pdftex` on this file and you're good to go!
+
+Long workaround, but one headache less..
