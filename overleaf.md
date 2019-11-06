@@ -18,7 +18,7 @@ So for next time, I'll be doing the following:
 3. The latest commit must correspond to my supervisor's. Run `git show HASH:main.tex > main_OLD.tex` where `HASH` refers to the commit hash of a relevant old local commit.
 4. Get `latexdiff` from [here](https://ctan.org/pkg/latexdiff). Copy it into the local directory if not already present. Run `cp main.tex latexdiff/main.tex && cp main_OLD.tex latexdiff/main_OLD.tex`.
 5. Make sure you have Perl installed. Now run `latexdiff -t UNDERLINE main_OLD.tex main.tex > main_DIFF.tex`. 
-6. Copy back to local directory by running  `cp ~/path/to/source/latexdiff/main_diff.tex ~/path/to/source/main_diff.tex`.
+6. Copy back to local directory by running  `cp main_DIFF.tex ../main_DIFF.tex`.
 7. Run `pdftex` on this file and you're good to go!
 
 Long workaround, but one headache less..
