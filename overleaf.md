@@ -13,8 +13,8 @@ In the end, (as always with PhD students..) I had to ditch my local changes in f
  git reset --hard origin/master
 ```
 So for next time, I'll be doing the following:
-1. Make sure I make no local changes when remote changes are made by executing `git pull` before every local change I want to make.
-2. Run `git log origin/master` to see all commits.
+1. Run `git fetch origin` to get all remote changes. Then run `git log origin`. Compare commits with `git log master` (local).
+2. If I observer changes in the previous step, I'll run `git pull`.
 3. The latest commit must correspond to my supervisor's. Run `git show HASH:main.tex > main_OLD.tex` where `HASH` refers to the commit hash of a relevant old local commit.
 4. Get `latexdiff` from [here](https://ctan.org/pkg/latexdiff). Copy it into the local directory if not already present. Run `cp main.tex latexdiff/main.tex && cp main_OLD.tex latexdiff/main_OLD.tex`.
 5. Make sure you have Perl installed. Now run `latexdiff -t UNDERLINE main_OLD.tex main.tex > main_DIFF.tex`. 
