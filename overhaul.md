@@ -11,7 +11,8 @@ Make sure you have give:
 ## TeX Live
 1. `sudo apt-get install texlive`
 2. If for some reason you cannot install packages with `tlmgr`, use: 
-```sudo tlmgr option repository ftp://tug.org/historic/systems/texlive/2017/tlnet-final
+```
+sudo tlmgr option repository ftp://tug.org/historic/systems/texlive/2017/tlnet-final
 ```
 to go back to add an old repository.
 3. Make sure you check the HEAD package on CTAN, in case a package installation fails.
