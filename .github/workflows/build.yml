@@ -4,9 +4,9 @@ on:
   push:
     branches:
     - master
-
 jobs:
   build:
+    runs-on: macos-11
     steps:
     - name: Checkout
       uses: actions/checkout@v1
