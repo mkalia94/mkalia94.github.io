@@ -1,11 +1,56 @@
-theme: jekyll-theme-hacker
-title: Notes
-description: Useful Python/Julia/LaTeX stuff I keep forgetting
-plugins:
-  - jekyll-seo-tag
+title: Manu's homepage
+owner: Manu Kalia
+email:
+description: Personal website
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+language: en
+twitter_username:
+github_username: mkalia94
+disqus_username: 
+# Build settings
+markdown: kramdown
+theme: minima
+scholar:
+    style: apa
+    bibliography: refs.bib
+    bibliography_template: bib
+    replace_strings: true
+    query: "@*"
+    group_order: descending
 
-navbar-links:
-  About Me: "Wandering between dynamical systems, computational neuroscience and data assimilation"
-  Resources:
-    - My project: "https://www.utwente.nl/en/eemcs/sacs/research/projects/projectpage-Kalia/"
-    - My work on a new homoclinic bifurcation: "https://arxiv.org/abs/1712.03212"
+permalink: /:year/:month/:day/:title/
+plugins: 
+  - jekyll-scholar
+gems:
+  - jekyll-feed
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle
+plugins:
+  - jekyll-katex
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: emadmasroor
+twitter_username: # your Twitter handle
+linkedin_username: # your LinkedIn user name
+scholar_userid: taOOCB8AAAAJ
+orcid_id: 0000-0002-8770-1429
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
+research_gate_profile: # your profile on ResearchGate
+blogger_url: # your blogger URL
+keybase_username: # your keybase user name
+
+contact_note: >
+  The best way to contact me is by email.
+google_analytics: # out your google-analytics code
+
+
+excerpt_separator: <!--more-->
