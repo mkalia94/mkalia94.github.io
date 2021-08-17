@@ -1,0 +1,17 @@
+I"�<h3 id="stuff-i-keep-forgetting">Stuff I keep forgetting</h3>
+<ul>
+  <li><a href="/MemoryIssue/">Running out of installation space</a></li>
+  <li><a href="/LargeFiles/">Pushing large files by mistake on GitHub</a></li>
+  <li><a href="/LinuxGPU/">Setting up NVIDIA GPU support for scientific programming in Linux using CUDA</a></li>
+  <li><a href="/NeuralODE/">DiffEqFlux.jl: Running ‘Neural ODEs’ on GPU</a></li>
+  <li><a href="/Overleaf/">Dealing with diverging commits on Overleaf free</a></li>
+  <li><a href="/Overhaul/">Overhaul</a></li>
+</ul>
+
+<h3 id="babbling">Babbling</h3>
+<ul>
+  <li>Next-gen language-wide autodiff is <a href="https://github.com/JuliaDiff/Diffractor.jl">here!</a></li>
+  <li>Don’t think much, just <a href="https://www.vim.org/">Vim.</a></li>
+  <li>You’re probably bored if you’re here, so go <a href="https://www.youtube.com/user/KadamsMedia">here.</a>.</li>
+</ul>
+:ET

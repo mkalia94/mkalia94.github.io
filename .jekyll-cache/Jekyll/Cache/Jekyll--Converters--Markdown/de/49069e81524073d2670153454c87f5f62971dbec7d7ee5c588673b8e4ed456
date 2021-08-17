@@ -1,0 +1,25 @@
+I"�<h1 id="syncing-with-overleaf-free">Syncing with Overleaf (free)</h1>
+
+<p>Nowadays I collaborate with a few (too many) authors on Overleaf for a new paper I’m struggling to finish. To make matters worse, I have a free Overleaf account. An easy addition to my list of headaches.
+The workaround is to be disciplined in pulling and pushing. You don’t want to have the following problem,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>... o ---- o ---- A ---- B  origin/master (upstream work)
+                   \
+                    C  master (your work)
+</code></pre></div></div>
+<p>Here, two separate commits <code class="language-plaintext highlighter-rouge">B</code> and <code class="language-plaintext highlighter-rouge">C</code> were made on <code class="language-plaintext highlighter-rouge">remote</code> and <code class="language-plaintext highlighter-rouge">local</code> branches respectively. The branches have thus ‘diverged’. According to <a href="https://stackoverflow.com/a/3278427">this StackOverflow post</a>, you can either rebase or merge the two branches. This didn’t work for me.
+In the end, I had to ditch my local changes in favour of remote changes. This can be done by executing</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git reset --hard origin/master
+</code></pre></div></div>
+<p>So for next time, I’ll be doing the following:</p>
+<ol>
+  <li>Run <code class="language-plaintext highlighter-rouge">git fetch origin</code> to get all remote changes. Then run <code class="language-plaintext highlighter-rouge">git log origin</code>. Compare commits with <code class="language-plaintext highlighter-rouge">git log master</code> (local).</li>
+  <li>If I observe changes in the previous step, I’ll run <code class="language-plaintext highlighter-rouge">git pull</code>.</li>
+  <li>The latest commit must correspond to my supervisor’s. Run <code class="language-plaintext highlighter-rouge">git show HASH:main.tex &gt; main_OLD.tex</code> where <code class="language-plaintext highlighter-rouge">HASH</code> refers to the commit hash of a relevant old local commit. <code class="language-plaintext highlighter-rouge">HASH</code> doesn’t have to be the whole string, 5-6 characters will do.</li>
+  <li>Get <code class="language-plaintext highlighter-rouge">latexdiff</code> from <a href="https://ctan.org/pkg/latexdiff">here</a>. Copy it into the local directory if not already present. Run <code class="language-plaintext highlighter-rouge">cp main.tex latexdiff/main.tex &amp;&amp; cp main_OLD.tex latexdiff/main_OLD.tex</code>.</li>
+  <li>Make sure you have Perl installed. Run <code class="language-plaintext highlighter-rouge">cd latexdiff</code> and then run <code class="language-plaintext highlighter-rouge">latexdiff -t UNDERLINE main_OLD.tex main.tex &gt; main_DIFF.tex</code>.</li>
+  <li>Copy back to local directory by running  <code class="language-plaintext highlighter-rouge">cp main_DIFF.tex ../main_DIFF.tex</code>.</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">pdftex</code> on this file and you’re good to go!</li>
+</ol>
+
+<p>Long workaround, but one headache less..</p>
+:ET
