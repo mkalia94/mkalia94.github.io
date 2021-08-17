@@ -1,0 +1,57 @@
+---
+---
+
+
+<div class="text-justify">{{reference | replace_first: 'Kalia, M.', '<b>Kalia, M.</b>' }}</div>
+
+{% if entry.abstract %} <button class="button0"  onclick="toggleBibtex{{entry.key}}()">abstract</button>
+<div id='a{{entry.key}}' style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+   {{ entry.abstract }}
+</div>
+{% endif %}
+
+{% if entry.idea %} <button class="button0"  onclick="toggleBibtex{{entry.key}}()">idea</button>
+<div id='a{{entry.key}}' style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+   {{ entry.idea }}
+</div>
+{% endif %}
+
+    {% if entry.link %}
+    <a href="{{ entry.link }}"><input class="button0" type="button" value="link" /></a>
+{% endif %}
+ 
+{% if entry.preprint %}
+    <a href="{{ entry.preprint }}"><input class="button0" type="button" value="preprint" /></a>
+{% endif %}
+ 
+{% if entry.code %}
+    <a href="{{ entry.code }}"><input class="button0" type="button" value="code" /></a>
+{% endif %}
+
+{% if entry.slides %}
+<a href="{{ entry.slides | prepend: '/assets/slides/' | relative_url }}"><input class="button0" type="button" value="slides" /></a>
+{% endif %}
+
+{% if entry.talk %}
+<a href="{{ entry.talk }}"><input class="button0" type="button" value="talk" /></a>
+{% endif %}
+
+
+{% if entry.poster %}
+<a href="{{ entry.poster | prepend: '/assets/poster/' | relative_url }}"><input class="button0" type="button" value="poster" /></a>
+{% endif %}
+
+
+
+
+
+<script>
+    function toggleBibtex{{entry.key}}() {
+        var x= document.getElementById('a{{entry.key}}');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
