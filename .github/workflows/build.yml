@@ -32,7 +32,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git commit "Site built"
+        git commit -m "Site built"
         git checkout master
         ls -Q | grep -v _site | xargs rm -rf
         mv _site/* .
