@@ -4,10 +4,12 @@
 
 <div class="text-justify">{{reference | replace_first: 'Kalia, M.', '<b>Kalia, M.</b>' }}</div>
 
-{% if entry.abstract %} 
+{% if entry.abstract %}
+{% katexmm %}
 <button class="button0"  onclick="toggleBibtex{{entry.key}}()">abstract</button>
 <div id='a{{entry.key}}' style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
    {{ entry.abstract }}
+   {% endkatexmm %}   
 </div>
 {% endif %}
 
