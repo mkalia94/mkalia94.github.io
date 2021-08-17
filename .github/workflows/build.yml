@@ -20,7 +20,7 @@ jobs:
       run: |
         set -xo pipefail
         rm -rf _site/*
-        gem install bundler
+        gem install bundler-1.14.6
         bundle install
         bundle exec jekyll build
         cp CNAME _site/CNAME
