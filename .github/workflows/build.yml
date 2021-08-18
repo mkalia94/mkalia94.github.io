@@ -28,7 +28,7 @@ jobs:
         git commit -m "Pre-deploy"
         git push  "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" master
         git checkout dev
-        git merge -s dev master
+        git merge -s ours master
         git checkout master
         git merge dev
         ls -q | grep -v _site |  xargs rm -rf
