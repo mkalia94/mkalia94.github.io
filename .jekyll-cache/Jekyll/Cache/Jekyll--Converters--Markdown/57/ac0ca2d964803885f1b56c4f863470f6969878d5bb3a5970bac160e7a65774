@@ -1,0 +1,61 @@
+I"c<h1 id="linux-ubuntu-and-nvidia-gpu-support">Linux (Ubuntu) and NVIDIA GPU support</h1>
+
+<p>If you want to use <code class="language-plaintext highlighter-rouge">tensorflow-gpu</code>, <code class="language-plaintext highlighter-rouge">Flux.jl</code> or any other library that benefits from GPU parallelisation, then you need to setup:</p>
+
+<ol>
+  <li>Appropriate NVIDIA drivers</li>
+  <li>CUDA</li>
+  <li>cuDNN</li>
+</ol>
+
+<h2 id="step-1-installing-appropriate-drivers">Step 1: Installing appropriate drivers</h2>
+
+<p>In Linux Mint the appropriate NVIDIA drivers can be hard to determine, as the latest drivers on the NVIDIA website may not necessarily be the most ideal ones, a fact accepted by NVIDIA themselves in the Additional Information section when trying to download drivers <a href="https://www.nvidia.com/Download/index.aspx?lang=en-us">here</a>.</p>
+
+<p>A foolproof method is as follows:</p>
+
+<ul>
+  <li>Fire up the terminal and run <code class="language-plaintext highlighter-rouge">sudo add-apt-repository ppa:graphics-drivers/ppa</code> followed by <code class="language-plaintext highlighter-rouge">sudo apt-get update</code>. This allows the system to search for the latest drivers.</li>
+  <li>Then run <code class="language-plaintext highlighter-rouge">ubuntu-drivers devices</code>. The output should mention your graphic card and the recommended driver.</li>
+  <li>Install the driver by running <code class="language-plaintext highlighter-rouge">sudo apt-get install nvidia-driver-xxx nvidia-settings nvidia-prime</code> where <code class="language-plaintext highlighter-rouge">xxx</code> is the driver number recommended in the previous step. In my case this was <code class="language-plaintext highlighter-rouge">nvidia-driver-430</code> (ASUS GX531 running RTX 2070, as of September 24, 2019).</li>
+  <li>Reboot, if you’re able to log in, run <code class="language-plaintext highlighter-rouge">nvidia-smi</code> in the terminal. If the output mentions the GPU ands the driver you installed, you are done!
+    <ul>
+      <li>If you enter a black screen on reboot, press <code class="language-plaintext highlighter-rouge">Ctrl+Shift+F2</code> to fire up <code class="language-plaintext highlighter-rouge">tty</code>. Use your login credentials and type 
+  <code class="language-plaintext highlighter-rouge">sudo apt-get remove --purge nvidia*</code> followed by <code class="language-plaintext highlighter-rouge">sudo apt-get install --reinstall xorg xserver-xorg</code>.</li>
+      <li>Running <code class="language-plaintext highlighter-rouge">reboot</code> restarts the computer and you should be back to the integrated drivers. Repeat driver installation steps,      but this time with different (lower) driver numbers. For example, the recommended driver for RTX 2070 is 418, but I could only     get 410 to work, which is still compatible with CUDA 10.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>ISSUES:</strong> Although this method always works, it has multiple disadvantages. Firstly, the CUDA installation in the next step can mess up the drivers again. Secondly, the drivers that do work are always outdated. Updating them as you update CUDA and cuDNN can lead to clashes as well.</p>
+
+<h2 id="step-2-install-cuda">Step 2: Install CUDA</h2>
+
+<p>Check the appropriate CUDA version for the driver installed in <code class="language-plaintext highlighter-rouge">Step 1</code> <a href="https://docs.nvidia.com/deploy/cuda-compatibility/index.html">here</a>. Follow the instructions to install from <a href="https://developer.nvidia.com/cuda-10.0-download-archive">the CUDA website</a>. If using Debian based distros, make sure to use the appropriate <code class="language-plaintext highlighter-rouge">.deb</code> files for installation. After installing CUDA with <code class="language-plaintext highlighter-rouge">apt-get</code>, also install <code class="language-plaintext highlighter-rouge">nvidia-cuda-toolkit</code> in the same way</p>
+
+<h2 id="step-3-install-cudnn">Step 3: Install cuDNN</h2>
+<p>Get cuDNN from <a href="https://developer.nvidia.com/cudnn">here</a> and follow the installation instructions. The copy-paste technique works best!</p>
+
+<h2 id="final-step-get-gpu-dependent-packages-working">Final step: Get GPU dependent packages working!</h2>
+
+<p>I use <code class="language-plaintext highlighter-rouge">Flux.jl</code> (julia) and <code class="language-plaintext highlighter-rouge">tensorflow</code> (python) for GPU-related tasks. Both these packages rely on a proper CUDA installation. In my experience, installing <code class="language-plaintext highlighter-rouge">tensorflow</code> from <a href="https://docs.conda.io/en/latest/miniconda.html">conda</a> ensures proper CUDA installation for python.</p>
+
+<p>You can now check if CUDA works on these two packages.</p>
+
+<h3 id="1-tensorflow">1. Tensorflow</h3>
+<p>Check using the following code</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tensorflow.python.client</span> <span class="kn">import</span> <span class="n">device_lib</span>
+<span class="k">print</span><span class="p">(</span><span class="n">device_lib</span><span class="p">.</span><span class="n">list_local_devices</span><span class="p">())</span>
+</code></pre></div></div>
+<h3 id="2-julia">2. Julia</h3>
+<p>Check with <code class="language-plaintext highlighter-rouge">CUDAnative</code> and <code class="language-plaintext highlighter-rouge">CuArrays</code> by first installing with</p>
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="n">Pkg</span>
+<span class="n">Pkg</span><span class="o">.</span><span class="n">Add</span><span class="x">(</span><span class="s">"CUDAnative"</span><span class="x">)</span>
+<span class="n">Pkg</span><span class="o">.</span><span class="n">Add</span><span class="x">(</span><span class="s">"CuArrays"</span><span class="x">)</span>
+</code></pre></div></div>
+<p>and then running</p>
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="x">]</span> <span class="n">test</span> <span class="n">CuArrays</span>
+</code></pre></div></div>
+<h2 id="bypass-all-above-methods-using-docker">Bypass all above methods using Docker</h2>
+<p>I haven’t tried this but it is recommended by folks at TensorFlow: https://www.tensorflow.org/install/docker</p>
+:ET

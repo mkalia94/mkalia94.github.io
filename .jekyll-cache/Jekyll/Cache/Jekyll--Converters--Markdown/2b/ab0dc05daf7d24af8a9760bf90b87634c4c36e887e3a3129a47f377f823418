@@ -1,0 +1,49 @@
+I"�<h1 id="diffeqfluxjl-running-neural-odes-on-gpu">DiffEqFlux.jl: Running Neural ODEs on GPU</h1>
+
+<p>Neural ODEs are a fantastic amalgamation of computational powers from applied dynamical systems and deep learning. The basic idea is to compute ‘infinite’ depth RNNs as ordinary differential equations. The method is thus depth independent, and makes use of modern ODE solvers to backpropagate. More details can be found <a href="https://julialang.org/blog/2019/01/fluxdiffeq">here</a> and <a href="https://arxiv.org/abs/1806.07366">here</a>. However, the code from the <code class="language-plaintext highlighter-rouge">model-zoo</code>, see <a href="https://github.com/FluxML/model-zoo/blob/master/other/diffeq/neural_ode.jl">here</a> is unfeasible to run on a GPU. I don’t have a workaround using the <code class="language-plaintext highlighter-rouge">neural_ode</code> function, but I can get <code class="language-plaintext highlighter-rouge">diffeq_rd</code> to work atleast on the GPU on the parameter fitting to constant problem (with Lotka-Volterra).</p>
+
+<h2 id="temporary-workaround">Temporary workaround</h2>
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">DiffEqFlux</span><span class="x">,</span> <span class="n">Flux</span><span class="x">,</span> <span class="n">OrdinaryDiffEq</span><span class="x">,</span> <span class="n">Test</span>
+<span class="k">using</span> <span class="n">CuArrays</span>
+
+<span class="k">function</span><span class="nf"> lotka_volterra</span><span class="x">(</span><span class="n">du</span><span class="x">,</span><span class="n">u</span><span class="x">,</span><span class="n">p</span><span class="x">,</span><span class="n">t</span><span class="x">)</span>
+  <span class="n">x</span><span class="x">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">u</span>
+  <span class="n">α</span><span class="x">,</span> <span class="n">β</span><span class="x">,</span> <span class="n">δ</span><span class="x">,</span> <span class="n">γ</span> <span class="o">=</span> <span class="n">p</span>
+  <span class="n">du</span><span class="x">[</span><span class="mi">1</span><span class="x">]</span> <span class="o">=</span> <span class="n">dx</span> <span class="o">=</span> <span class="x">(</span><span class="n">α</span> <span class="o">-</span> <span class="n">β</span><span class="o">*</span><span class="n">y</span><span class="x">)</span><span class="n">x</span>
+  <span class="n">du</span><span class="x">[</span><span class="mi">2</span><span class="x">]</span> <span class="o">=</span> <span class="n">dy</span> <span class="o">=</span> <span class="x">(</span><span class="n">δ</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="n">γ</span><span class="x">)</span><span class="n">y</span>
+<span class="k">end</span>
+<span class="n">prob</span> <span class="o">=</span> <span class="n">ODEProblem</span><span class="x">(</span><span class="n">lotka_volterra</span><span class="x">,[</span><span class="mf">1.0</span><span class="x">,</span><span class="mf">1.0</span><span class="x">],(</span><span class="mf">0.0</span><span class="x">,</span><span class="mf">10.0</span><span class="x">))</span>
+<span class="kd">const</span> <span class="n">len</span> <span class="o">=</span> <span class="n">length</span><span class="x">(</span><span class="n">range</span><span class="x">(</span><span class="mf">0.0</span><span class="x">,</span><span class="n">stop</span><span class="o">=</span><span class="mf">10.0</span><span class="x">,</span><span class="n">step</span><span class="o">=</span><span class="mf">0.1</span><span class="x">))</span> <span class="c"># 101</span>
+
+<span class="c"># Reverse-mode</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">param</span><span class="x">([</span><span class="mf">2.2</span><span class="x">,</span> <span class="mf">1.0</span><span class="x">,</span> <span class="mf">2.0</span><span class="x">,</span> <span class="mf">0.4</span><span class="x">])</span>
+<span class="n">params</span> <span class="o">=</span> <span class="n">Flux</span><span class="o">.</span><span class="n">Params</span><span class="x">([</span><span class="n">p</span><span class="x">])</span>
+<span class="k">function</span><span class="nf"> predict_rd</span><span class="x">()</span>
+  <span class="n">vec</span><span class="x">(</span><span class="n">diffeq_rd</span><span class="x">(</span><span class="n">p</span><span class="x">,</span><span class="n">gpu</span><span class="x">(</span><span class="n">prob</span><span class="x">),</span><span class="n">Tsit5</span><span class="x">(),</span><span class="n">saveat</span><span class="o">=</span><span class="mf">0.1</span><span class="x">))</span>
+<span class="k">end</span>
+<span class="n">loss_rd</span><span class="x">()</span> <span class="o">=</span> <span class="n">sum</span><span class="x">(</span><span class="n">abs2</span><span class="x">,</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="k">in</span> <span class="n">predict_rd</span><span class="x">())</span>
+<span class="n">loss_rd</span><span class="x">()</span>
+
+<span class="n">grads</span> <span class="o">=</span> <span class="n">Tracker</span><span class="o">.</span><span class="n">gradient</span><span class="x">(</span><span class="n">loss_rd</span><span class="x">,</span> <span class="n">params</span><span class="x">,</span> <span class="n">nest</span><span class="o">=</span><span class="nb">true</span><span class="x">)</span>
+<span class="n">grads</span><span class="x">[</span><span class="n">p</span><span class="x">]</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">Iterators</span><span class="o">.</span><span class="n">repeated</span><span class="x">((),</span> <span class="mi">100</span><span class="x">)</span>
+<span class="n">opt</span> <span class="o">=</span> <span class="n">ADAM</span><span class="x">(</span><span class="mf">0.1</span><span class="x">)</span>
+<span class="n">cb</span> <span class="o">=</span> <span class="k">function</span><span class="nf"> </span><span class="o">()</span>
+  <span class="n">display</span><span class="x">(</span><span class="n">loss_rd</span><span class="x">())</span>
+  <span class="c">#display(plot(solve(remake(prob,p=Flux.data(p)),Tsit5(),saveat=0.1),ylim=(0,6)))</span>
+<span class="k">end</span>
+
+<span class="c"># Display the ODE with the current parameter values.</span>
+<span class="n">cb</span><span class="x">()</span>
+
+<span class="k">using</span> <span class="n">TickTock</span>
+<span class="n">tick</span><span class="x">()</span>
+<span class="n">Flux</span><span class="o">.</span><span class="n">train!</span><span class="x">(</span><span class="n">loss_rd</span><span class="x">,</span> <span class="n">params</span><span class="x">,</span> <span class="n">data</span><span class="x">,</span> <span class="n">opt</span><span class="x">,</span> <span class="n">cb</span> <span class="o">=</span> <span class="n">cb</span><span class="x">)</span>
+<span class="n">tock</span><span class="x">()</span>
+
+</code></pre></div></div>
+
+<p>Commenting out <code class="language-plaintext highlighter-rouge">using CuArrays</code> runs the simulation on the CPU. The gain in computation speed is small, but I assume with more number of parameters (model and network), the GPU should show significant benefit. More on that till the next headache..</p>
+:ET

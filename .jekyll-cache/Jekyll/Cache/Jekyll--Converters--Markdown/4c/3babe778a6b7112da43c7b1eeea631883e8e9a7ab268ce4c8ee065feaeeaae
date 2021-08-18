@@ -1,0 +1,9 @@
+I"¤<h1 id="pushing-large-files-on-github">Pushing large files on GitHub</h1>
+
+<p>A friend encountered the following problem: What if you push a very large file (&gt;100M) and Git throws an error (Large simulation much)? This error often propagates even if you delete the big file. <code class="language-plaintext highlighter-rouge">cd</code> into the relevant folder and run:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo du</span> <span class="nt">-ahx</span> <span class="nt">-d</span> 1 <span class="nb">.</span> | <span class="nb">sort</span> <span class="nt">-rh</span> | <span class="nb">head</span> <span class="nt">-20</span>
+</code></pre></div></div>
+<p>This gives a list of all large files present in the folder, in descending order. The solution is to delete the local commit history of the file and push again. Note the file name, and run:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git filter-branch <span class="nt">--index-filter</span> <span class="s1">'git rm -r --cached --ignore-unmatch [FILENAME]'</span> HEAD
+</code></pre></div></div>
+:ET
