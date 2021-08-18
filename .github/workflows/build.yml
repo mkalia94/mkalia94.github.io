@@ -27,7 +27,7 @@ jobs:
         # git add .
         # git commit -m "Pre-deploy"
         git checkout dev
-        git merge -s ours master
+        git merge -s ours origin/master
         git checkout master
         git pull
         git merge dev
