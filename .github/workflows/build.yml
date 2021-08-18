@@ -34,7 +34,7 @@ jobs:
         git add .
         git commit -m "Site built"
         git checkout master
-        ls -q | grep -v _site CNAME | xargs rm -rf
+        ls -q | grep -v _site | grep -v CNAME | xargs rm -rf
         mv _site/* .
         rm -rf _site
         [[ -n "$(git status --porcelain)" ]] || exit 0
