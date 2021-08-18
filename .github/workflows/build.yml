@@ -26,9 +26,8 @@ jobs:
         ls -q | xargs rm -rf
         git add .
         git commit -m "Pre-deploy"
-        git push  "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" master
         git checkout dev
-        git merge -s ours origin/master
+        git merge -s ours master
         git checkout master
         git pull
         git merge dev
