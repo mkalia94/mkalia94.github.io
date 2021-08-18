@@ -19,8 +19,6 @@ jobs:
         set -xo pipefail
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add .
-        git commit -m "Site built"
         git checkout master
         rm -rf *
         rm .DS_Store
