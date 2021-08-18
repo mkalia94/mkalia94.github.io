@@ -20,7 +20,7 @@ jobs:
       run: |
         set -xo pipefail
         rm -rf _site/*
-        gem install bundler
+      gem install bundler:1.14.6
         bundle install
         bundle exec jekyll build
         cp CNAME _site/CNAME
@@ -39,6 +39,8 @@ jobs:
         # git add .
         # git commit -m "Pre-deploy"
         # git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" master
+        git add .
+        git commit -m "Website generated"
         git checkout dev
         git merge -s ours origin/master
         git checkout master
