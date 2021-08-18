@@ -23,6 +23,7 @@ jobs:
         rm -rf *
         rm .DS_Store
         rm -rf .jekyll-cache
+        rm -r .Gem*
         git add .
         git commit -m "Pre-deploy"
         git push  "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" master
