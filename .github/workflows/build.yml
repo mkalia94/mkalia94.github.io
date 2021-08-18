@@ -30,6 +30,7 @@ jobs:
         git checkout dev
         git merge -s ours origin/master
         git checkout master
+        git pull
         git merge dev
         ls -q | grep -v _site |  xargs rm -rf
         mv _site/* .
