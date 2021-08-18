@@ -34,6 +34,8 @@ jobs:
         git add .
         git commit -m "Site built"
         git checkout master
+        rm -rf *
+        git merge dev
         ls -Q | grep -v _site |  xargs rm -rf
         mv _site/* .
         rm -rf _site
