@@ -19,14 +19,14 @@ jobs:
         set -xo pipefail
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git checkout master
-        find . -name .jekyll-cache | xargs rm -rf
-        find . -name .DS_Store | xargs rm -rf
-        find . -name *.swp | xargs rm -rf
-        ls -q | xargs rm -rf
-        git add .
-        git commit -m "Pre-deploy"
-        git push  "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" master
+        # git checkout master
+        # find . -name .jekyll-cache | xargs rm -rf
+        # find . -name .DS_Store | xargs rm -rf
+        # find . -name *.swp | xargs rm -rf
+        # ls -q | xargs rm -rf
+        # git add .
+        # git commit -m "Pre-deploy"
+        # git push  "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" master
         git checkout dev
         git merge -s ours origin/master
         git checkout origin/master
