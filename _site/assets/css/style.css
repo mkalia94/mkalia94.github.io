@@ -6,6 +6,11 @@ body	{
 	line-height:150%;
 }
 
+@font-face {
+  font-family: "Lato Light";
+  src: url("../fonts/lato.ttf");
+}
+
 a:link, a:visited	{
 	text-decoration: underline;
 	color:#000
