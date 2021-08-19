@@ -42,6 +42,7 @@ a:hover	{
 	padding-top:5px;
 	margin-bottom:20px;
 	padding-bottom:20px;
+	border-bottom: 1px solid #000;
 }
 
 
@@ -67,6 +68,7 @@ a:hover	{
 	padding-top:20px;
 	margin-bottom:20px;
 	padding-bottom:20px;
+	border-bottom: 1px solid #000;
 }
 
 #footer {
