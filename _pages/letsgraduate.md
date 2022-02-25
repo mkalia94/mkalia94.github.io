@@ -9,5 +9,5 @@ I'm pleased that you intend to partake in the culmination of my 5 year journey t
 
 I request you to fill out your details in the Google form link below. Also consider buying me a coffee to help with printing and delivery costs!
 
-[Buy me a coffee!](buymeacoffee.com/letsgraduate) &nbsp; [Sign up for thesis copy](https://docs.google.com/forms/d/e/1FAIpQLScb3-G2QBJAwIVLoEIYVaPxZ7qvpvj0sRAvR6yBIba-FbTFXg/viewform?usp=sf_link)
+[Buy me a coffee!](https://buymeacoffee.com/letsgraduate) &nbsp; [Sign up for thesis copy](https://docs.google.com/forms/d/e/1FAIpQLScb3-G2QBJAwIVLoEIYVaPxZ7qvpvj0sRAvR6yBIba-FbTFXg/viewform?usp=sf_link)
 
