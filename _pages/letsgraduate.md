@@ -9,6 +9,6 @@ I'm pleased that you intend to partake in the culmination of my 5 year journey t
 
 I request you to fill out your details in the Google form link below. Also consider buying me a coffee to help with printing and delivery costs!
 
-
+[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
 [Buy me a coffee!](http://www.google.com){: .button0} | [Sign up!](http://www.google.com){: .button0}
 
