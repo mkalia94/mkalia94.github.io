@@ -9,7 +9,7 @@ I will defend my PhD publicly at the University of Twente on July 14. I'm please
 
 The thesis will be printed in the form of a book, with roughly 200 pages and a size of 17 x 24 cm. If you'd like me to personally give you the copy in the Netherlands, that is definitely possible. Else, you will receive a copy shipped directly to your residence, or place of work. 
 
-I request you to fill out your details in the Google form link below. Also consider buying me a coffee to help with printing and delivery costs!
+I request you to fill out your details in the Google form link below.
 
-[Buy me a coffee!](https://buymeacoffee.com/letsgraduate) &nbsp; [RSVP defence and thesis](https://forms.gle/DHeLsosfQGqrfrW77)
+[RSVP defence and thesis](https://forms.gle/DHeLsosfQGqrfrW77)
 
