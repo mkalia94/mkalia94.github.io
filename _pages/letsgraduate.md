@@ -11,7 +11,7 @@ The defence will be followed by a drink and dinner afterwards, for which you can
 
 The thesis will be printed in the form of a book, with roughly 200 pages and a size of 17 x 24 cm. If you'd like me to personally give you the copy in the Netherlands, that is definitely possible. Else, you will receive a copy shipped directly to your residence, or place of work. 
 
-I request you to fill out your details in the Google form link below.
+I request you to fill out your details in the Google form link below. 
 
 [RSVP defence and thesis](https://forms.gle/DHeLsosfQGqrfrW77)
 
