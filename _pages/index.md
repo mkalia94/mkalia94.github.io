@@ -3,6 +3,8 @@ layout: home
 title: Home
 permalink: /
 ---
-I'm a PhD candidate in Applied Math at the University of Twente [(here)](https://www.utwente.nl/en/eemcs/sacs/research/projects/projectpage-Kalia/#description) working on computational neuroscience, dynamical systems and machine learning. While AFK, I enjoy board games, racket sports and bouldering. Open sourced research and knowledge! **Currently looking for Postdoc/job options.**
+I am a researcher working in dynamical systems theory and its applications in neuroscience and machine learning. I obtained my PhD under [Hil Meijer](https://wwwhome.ewi.utwente.nl/~meijerhge/) titled 'Data, models and transitions in computational neuroscience: bottom-up and top-down approaches' at the University of Twente.  Board games, racket sports and bouldering. Open sourced research and knowledge!
+
+Starting August 1, I will start an Einstein Visting Fellowship postdoctoral position at the Freie Universit\"at Berlin, with [P\'eter Koltai](http://userpage.fu-berlin.de/peterkoltai/index.html) and [Gary Froyland](https://web.maths.unsw.edu.au/~froyland/).
 
 Email: m **(dot)** kalia **(at)** utwente **(dot)** nl
