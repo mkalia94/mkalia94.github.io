@@ -9,4 +9,8 @@ I recently obtained my PhD under [Hil Meijer](https://wwwhome.ewi.utwente.nl/~me
 
 My interests lie in mathematical modeling in physical sciences, dynamical systems and its interaction with machine learning.
 
-Email: m **(dot)** kalia **(at)** utwente **(dot)** nl
+News:
+- 10/22 - 11/22: Visiting Gary Froyland at UNSW, Sydney
+- 05/23: SIAM DS23 MS12: *Community detection in temporal dynamics and the Laplace operator*
+
+Email:  (first name) (last name) 94  **(at)** gmail **(dot)** com
