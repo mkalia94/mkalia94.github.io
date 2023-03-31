@@ -13,4 +13,4 @@ News:
 - 10/22 - 11/22: Visiting Gary Froyland at UNSW, Sydney
 - 05/23: SIAM DS23 MS12: *Community detection in temporal dynamics and the Laplace operator*
 
-Email:  (first name) (last name) 94  **(at)** gmail **(dot)** com
+Email:  m (**dot**) (last name)  **(at)** fu-berlin **(dot)** de
