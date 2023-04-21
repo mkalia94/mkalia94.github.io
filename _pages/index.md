@@ -11,6 +11,8 @@ My interests lie in mathematical modeling in physical sciences, dynamical system
 
 News:
 - 10/22 - 11/22: Visiting Gary Froyland at UNSW, Sydney
-- 05/23: SIAM DS23 MS12: *Community detection in temporal dynamics and the Laplace operator*
+- 04/23: Biophysical neural masses and EEG! [Preprint here.](https://www.biorxiv.org/content/10.1101/2023.04.07.535995v1)
+- 05/23: SIAM DS23 MS12: [Community detection in temporal dynamics and the Laplace operator](https://meetings.siam.org/sess/dsp_talk.cfm?p=126766)
+
 
 Email:  m (**dot**) (last name)  **(at)** fu-berlin **(dot)** de
