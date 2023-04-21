@@ -1,0 +1,351 @@
+I"Xr<p>My research and interests are broadly divided over three categories:</p>
+<ol>
+  <li><strong>Generalizable computational neuroscience</strong>:
+    <ul>
+      <li>How can we build biophysically realistic models that are consistent across experimental conditions and pathologies?</li>
+      <li>How can we scale models from single synapses to tissues to interacting brain regions?</li>
+    </ul>
+  </li>
+  <li><strong>Applied dynamical systems</strong>:
+    <ul>
+      <li>How do complex phenomena arising in physical systems relate to local/global bifurcation analysis of their governing equations?</li>
+      <li>Can new bifurcations in such equations reveal more about the physical phenomenon in question?</li>
+    </ul>
+  </li>
+  <li><strong>Machine learning and dynamical systems</strong>:
+    <ul>
+      <li>Moving away from traditional bottom-up approaches to construct feature-rich models based on physical principles, can we derive such feature-rich models from data alone?</li>
+      <li>Further, can dynamical systems play a role in understanding/controling/stabilizing the current machine learning paradigm?</li>
+    </ul>
+  </li>
+</ol>
+
+<p>If you’re a bachelor/master student looking for a project, please have a look at open projects below, and contact me.</p>
+
+<h3 id="in-progress">In progress</h3>
+<ol class="bibliography"><li><div class="text-justify"><span id="paramest"><b>Kalia, M.</b> (Ongoing). <i>Estimating Parameters in ODEs with Neural Networks</i>.</span></div>
+
+
+
+
+<button class="button0" onclick="toggleBibtexparamest()">idea</button>
+<div id="aparamest" style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+   The goal is to combine the classical augmented Kalman Filter with deep learning to estimate parameters arising in nonlinear differential equations.
+</div>
+
+
+    
+ 
+
+ 
+
+
+
+<a href="/assets/slides/SIAM_MDS_2020.pdf"><input class="button0" type="button" value="slides" /></a>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleBibtexparamest() {
+        var x= document.getElementById('aparamest');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</li></ol>
+
+<h3 id="preprints">Preprints</h3>
+<ol class="bibliography"><li><div class="text-justify"><span id="neuralmass"><b>Kalia, M.</b>, Ligtenstein, S. L. B., Meijer, H. G. E., &amp; van Putten, M. J. A. M. (2023). A neural mass model for the EEG in ischemia. <i>BioRxiv</i>. https://doi.org/10.1101/2023.04.07.535995</span></div>
+
+
+<button class="button0" onclick="toggleBibtexneuralmass()">abstract</button>
+<div id="aneuralmass" style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+
+   Normal brain function depends on continuous cerebral blood flow for the supply of oxygen and glucose, and is quickly compromised in conditions where the metabolic demand cannot be met. Insufficient cerebral perfusion can result in ischemic stroke, with symptoms ranging from loss of motor or language function to coma, depending on the brain areas affected. Cerebral ischemia also results in changes in the electroencephalogram. Initially, a reduction of the frequency of the rhythms occurs. Depending on the depth and duration of energy deprivation, this eventually leads to the disappearance of all rhythmic activity. Here, we study the relationship between electroencephalogram (EEG) phenomenology and cellular biophysical principles using a model of interacting thalamic and cortical neural masses coupled with energy-dependent synaptic transmission. Our model faithfully reproduces the characteristic EEG phenomenology during acute cerebral ischemia and shows that synaptic arrest occurs before cell swelling and irreversible neuronal depolarization. The early synaptic arrest is attributed to ion homeostatic failure due to dysfunctional Na+/K+-ATPase. Moreover, we show that the excitatory input from relay cells to the cortex controls rhythmic behavior. In particular, weak relay-interneuron interaction manifests in burst-like EEG behavior immediately prior to synaptic arrest. We corroborate our observations with human EEG data from patients undergoing carotid endarterectomy and patients after cardiac arrest with a postanoxic encephalopathy. The model thus reconciles the implications of stroke on a cellular, synaptic and circuit level and provides a basis for exploring other multi-scale therapeutic interventions.Significance statement Reliable synaptic transmission and preservation of ion gradients across cellular membranes are essential for physiological brain function and consume significant energy. During cerebral ischemia, synaptic arrest occurs early due to energy deprivation (ED), which is characterized clinically by the loss of physiological electroencephalographic (EEG) rhythms. In this work, we explore connections between cellular and network behavior during ED by means of a novel computational model that describes ion dynamics in the cortex and thalamus, and resulting EEG. We reproduce characteristic EEG behavior during ED and show that synaptic arrest occurs before other pathologies like swelling and depolarization. Moreover, we predict that low excitatory thalamocortical projections cause burst-like EEG patterns before synaptic arrest, which may explain observations regarding post-stroke synaptic reorganization.Competing Interest StatementThe authors have declared no competing interest.
+      
+</div>
+
+
+
+
+    
+    <a href="https://www.biorxiv.org/content/early/2023/04/10/2023.04.07.535995"><input class="button0" type="button" value="link" /></a>
+
+ 
+
+    <a href="https://www.biorxiv.org/content/early/2023/04/10/2023.04.07.535995.full.pdf"><input class="button0" type="button" value="preprint" /></a>
+
+ 
+
+    <a href="https://github.com/mkalia94/BiophysicalNM"><input class="button0" type="button" value="code" /></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleBibtexneuralmass() {
+        var x= document.getElementById('aneuralmass');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</li>
+<li><div class="text-justify"><span id="NFAE"><b>Kalia, M.</b>, Brunton, S. L., Meijer, H. G. E., Brune, C., &amp; Kutz, J. N. (2021). Learning normal form autoencoders for data-driven discovery of universal, parameter-dependent governing equations. <i>ArXiv:2106.05102</i>.</span></div>
+
+
+<button class="button0" onclick="toggleBibtexNFAE()">abstract</button>
+<div id="aNFAE" style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+
+   Complex systems manifest a small number of instabilities and bifurcations that are canonical in nature, resulting in universal pattern forming characteristics as a function of some parametric dependence. Such parametric instabilities are mathematically characterized by their universal un-foldings, or normal form dynamics, whereby a parsimonious model can be used to represent the dynamics. Although center manifold theory guarantees the existence of such low-dimensional normal forms, finding them has remained a long standing challenge. In this work, we introduce deep learning autoencoders to discover coordinate transformations that capture the underlying parametric dependence of a dynamical system in terms of its canonical normal form, allowing for a simple representation of the parametric dependence and bifurcation structure. The autoencoder constrains the latent variable to adhere to a given normal form, thus allowing it to learn the appropriate coordinate transformation. We demonstrate the method on a number of example problems, showing that it can capture a diverse set of normal forms associated with Hopf, pitchfork, transcritical and/or saddle node bifurcations. This method shows how normal forms can be leveraged as canonical and universal building blocks in deep learning approaches for model discovery and reduced-order modeling.
+      
+</div>
+
+
+
+
+    
+ 
+
+    <a href="https://arxiv.org/abs/2106.05102"><input class="button0" type="button" value="preprint" /></a>
+
+ 
+
+    <a href="https://github.com/dynamicslab/NormalFormAE/"><input class="button0" type="button" value="code" /></a>
+
+
+
+<a href="/assets/slides/DS21.pdf"><input class="button0" type="button" value="slides" /></a>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleBibtexNFAE() {
+        var x= document.getElementById('aNFAE');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</li>
+<li><div class="text-justify"><span id="kalia2015cross"><b>Kalia, M.</b>, &amp; Ghosh, S. (2015). Cross-Correlation in cricket data and RMT. <i>ArXiv:1502.03411</i>.</span></div>
+
+
+<button class="button0" onclick="toggleBibtexkalia2015cross()">abstract</button>
+<div id="akalia2015cross" style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+
+       We analyze cross-correlation between runs scored over a time interval in cricket matches of different teams using methods of random matrix theory (RMT). We obtain an ensemble of cross-correlation matrices <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>
+from runs scored by eight cricket playing nations for (i) test cricket from 1877 -2014 
+(ii)one-day internationals from
+1971 -2014 and (iii) seven teams participating in the Indian Premier league T20 format (2008-2014) respectively.
+We find that a majority of the eigenvalues of C fall within the bounds of random matrices having joint probability distribution <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>…</mo><mo separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mo>=</mo><msub><mi>C</mi><mi>N</mi></msub><mi>β</mi><mtext> </mtext><msub><mo>∏</mo><mi>j</mi></msub><mo>&lt;</mo><mi>k</mi><mi>w</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">)</mo><msup><mrow><mo fence="true">∣</mo><msub><mi>x</mi><mi>j</mi></msub><mo>−</mo><msub><mi>x</mi><mi>k</mi></msub><mo fence="true">∣</mo></mrow><mi>β</mi></msup></mrow><annotation encoding="application/x-tex">P(x_1\ldots,x_n)=C_N β  \prod_j&lt;kw(x_j)\left | x_j-x_k \right |^β</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.185818em;vertical-align:-0.43581800000000004em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mord"> </span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∏</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.16195399999999993em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.43581800000000004em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.275116em;vertical-align:-0.286108em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;">∣</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">∣</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9890079999999999em;"><span style="top:-3.2029000000000005em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05278em;">β</span></span></span></span></span></span></span></span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>x</mi><mi>N</mi></msup><mi>β</mi><mi>a</mi><mi>exp</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mo>−</mo><mi>N</mi><mi>β</mi><mi>b</mi><mi>x</mi><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">w(x)=x^Nβa\exp\left(-Nβb x\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0913309999999998em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">exp</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord">−</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mord mathdefault">b</span><span class="mord mathdefault">x</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">β</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span></span></span></span> is the Dyson parameter. The corresponding level density  gives Marchenko-Pastur (MP) distribution while fluctuations of every participating team agrees with the universal behavior of Gaussian Unitary Ensemble (GUE). We analyze the components of the deviating eigenvalues and find that the largest eigenvalue corresponds
+to an influence common to all matches played during these periods.
+      
+</div>
+
+
+
+
+    
+ 
+
+    <a href="https://arxiv.org/abs/1502.03411"><input class="button0" type="button" value="preprint" /></a>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleBibtexkalia2015cross() {
+        var x= document.getElementById('akalia2015cross');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</li></ol>
+
+<h3 id="peer-reviewed">Peer-reviewed</h3>
+<ol class="bibliography"><li><div class="text-justify"><span id="chloride">Engels, M., <b>Kalia, M.</b>, Rahmati, S., Petersilie, L., Kovermann, P., van Putten, M. J. A. M., Rose, C. R., Meijer, H. G. E., Gensch, T., &amp; Fahlke, C. (2021). Glial Chloride Homeostasis Under Transient Ischemic Stress. <i>Frontiers in Cellular Neuroscience</i>, <i>15</i>, 365. https://doi.org/10.3389/fncel.2021.735300</span></div>
+
+
+<button class="button0" onclick="toggleBibtexchloride()">abstract</button>
+<div id="achloride" style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+
+   High water permeabilities permit rapid adjustments of glial volume upon changes in external and internal osmolarity, and pathologically altered intracellular chloride concentrations ([Cl<sup>–</sup>]<sub>int</sub>) and glial cell swelling are often assumed to represent early events in ischemia, infections, or traumatic brain injury. Experimental data for glial [Cl<sup>–</sup>]<sub>int</sub> are lacking for most brain regions, under normal as well as under pathological conditions. We measured [Cl<sup>–</sup>]<sub>int</sub> in hippocampal and neocortical astrocytes and in hippocampal radial glia-like (RGL) cells in acute murine brain slices using fluorescence lifetime imaging microscopy with the chloride-sensitive dye MQAE at room temperature. We observed substantial heterogeneity in baseline [Cl<sup>–</sup>]<sub>int</sub>, ranging from 14.0 ± 2.0 mM in neocortical astrocytes to 28.4 ± 3.0 mM in dentate gyrus astrocytes. Chloride accumulation by the Na<sup>+</sup>-K<sup>+</sup>-2Cl<sup>–</sup> cotransporter (NKCC1) and chloride outward transport (efflux) through K<sup>+</sup>-Cl<sup>–</sup> cotransporters (KCC1 and KCC3) or excitatory amino acid transporter (EAAT) anion channels control [Cl<sup>–</sup>]<sub>int</sub> to variable extent in distinct brain regions. In hippocampal astrocytes, blocking NKCC1 decreased [Cl<sup>–</sup>]<sub>int</sub>, whereas KCC or EAAT anion channel inhibition had little effect. In contrast, neocortical astrocytic or RGL [Cl<sup>–</sup>]<sub>int</sub> was very sensitive to block of chloride outward transport, but not to NKCC1 inhibition. Mathematical modeling demonstrated that higher numbers of NKCC1 and KCC transporters can account for lower [Cl<sup>–</sup>]<sub>int</sub> in neocortical than in hippocampal astrocytes. Energy depletion mimicking ischemia for up to 10 min did not result in pronounced changes in [Cl<sup>–</sup>]<sub>int</sub> in any of the tested glial cell types. However, [Cl<sup>–</sup>]<sub>int</sub> changes occurred under ischemic conditions after blocking selected anion transporters. We conclude that stimulated chloride accumulation and chloride efflux compensate for each other and prevent glial swelling under transient energy deprivation.
+      
+</div>
+
+
+
+
+    
+    <a href="https://www.frontiersin.org/article/10.3389/fncel.2021.735300"><input class="button0" type="button" value="link" /></a>
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleBibtexchloride() {
+        var x= document.getElementById('achloride');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</li>
+<li><div class="text-justify"><span id="Kalia2021"><b>Kalia, M.</b>, Meijer, H. G. E., van Gils, S. A., van Putten, M. J. A. M., &amp; Rose, C. R. (2021). Ion dynamics at the energy-deprived tripartite synapse. <i>PLOS Computational Biology</i>, <i>17</i>(6), 1–37.</span></div>
+
+
+<button class="button0" onclick="toggleBibtexKalia2021()">abstract</button>
+<div id="aKalia2021" style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+
+   The anatomical and functional organization of neurons and astrocytes at ‘tripartite synapses’ is essential for reliable neurotransmission, which critically depends on ATP. In low energy conditions, synaptic transmission fails, accompanied by a breakdown of ion gradients, changes in membrane potentials and cell swelling. The resulting cellular damage and cell death are causal to the often devastating consequences of an ischemic stroke. The severity of ischemic damage depends on the age and the brain region in which a stroke occurs, but the reasons for this differential vulnerability are far from understood. In the present study, we address this question by developing a comprehensive biophysical model of a glutamatergic synapse to identify key determinants of synaptic failure during energy deprivation. Our model is based on fundamental biophysical principles, includes dynamics of the most relevant ions, i.e., Na+, K+, Ca2+, Cl− and glutamate, and is calibrated with experimental data. It confirms the critical role of the Na+/K+-ATPase in maintaining ion gradients, membrane potentials and cell volumes. Our simulations demonstrate that the system exhibits two stable states, one physiological and one pathological. During energy deprivation, the physiological state may disappear, forcing a transit to the pathological state, which can be reverted when blocking voltage-gated Na+ and K+ channels. Our model predicts that the transition to the pathological state is favoured if the extracellular space fraction is small. A reduction in the extracellular space volume fraction, as, e.g. observed with ageing, will thus promote the brain’s susceptibility to ischemic damage. Our work provides new insights into the brain’s ability to recover from energy deprivation, with translational relevance for diagnosis and treatment of ischemic strokes.
+      
+</div>
+
+
+
+
+    
+    <a href="https://doi.org/10.1371/journal.pcbi.1009019"><input class="button0" type="button" value="link" /></a>
+
+ 
+
+    <a href="https://www.biorxiv.org/content/10.1101/2021.03.19.436129v1"><input class="button0" type="button" value="preprint" /></a>
+
+ 
+
+    <a href="https://github.com/mkalia94/TripartiteSynapse"><input class="button0" type="button" value="code" /></a>
+
+
+
+<a href="/assets/slides/SMB2021.pdf"><input class="button0" type="button" value="slides" /></a>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleBibtexKalia2021() {
+        var x= document.getElementById('aKalia2021');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</li>
+<li><div class="text-justify"><span id="Kalia2019"><b>Kalia, M.</b>, Kuznetsov, Y. A., &amp; Meijer, H. G. E. (2019). Homoclinic saddle to saddle-focus transitions in 4D systems. <i>Nonlinearity</i>, <i>32</i>(6), 2024–2054.</span></div>
+
+
+<button class="button0" onclick="toggleBibtexKalia2019()">abstract</button>
+<div id="aKalia2019" style="display: none; background-color:LightGray; border-radius:5px; padding:10px; margin-bottom:20px;">
+
+   A saddle to saddle-focus homoclinic transition when the stable leading eigenspace is three-dimensional (called the 3DL bifurcation) is analyzed. Here a pair of complex eigenvalues and a real eigenvalue exchange their position relative to the imaginary axis, giving rise to a 3D stable leading eigenspace at the critical parameter values. This transition is different from the standard Belyakov bifurcation, where a double real eigenvalue splits either into a pair of complex-conjugate eigenvalues or two distinct real eigenvalues. In the wild case, we obtain sets of codimension 1 and 2 bifurcation curves and points that asymptotically approach the 3DL bifurcation point and have a structure that differs from that of the standard Belyakov case. We give an example of this bifurcation in a perturbed Lorenz–Stenflo 4D ordinary differential equation model.
+      
+</div>
+
+
+
+
+    
+    <a href="https://doi.org/10.1088/1361-6544/ab0041"><input class="button0" type="button" value="link" /></a>
+
+ 
+
+    <a href="https://arxiv.org/abs/1712.03212"><input class="button0" type="button" value="preprint" /></a>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleBibtexKalia2019() {
+        var x= document.getElementById('aKalia2019');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</li></ol>
+
+:ET
