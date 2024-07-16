@@ -5,7 +5,7 @@ permalink: /links/
 ---
 
 ### Roll call datasets
-* [US senate/congress roll call votes](https://voteview.com/)
+* [US senate/congress roll call votes](https://voteview.com)
 * [German Bundestag roll call votes](https://dataverse.harvard.edu/dataverse/btvote)
 
 
