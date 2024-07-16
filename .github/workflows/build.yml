@@ -13,7 +13,11 @@ jobs:
       with:
         ref: dev
     - name: Set up Ruby 3.x
-      uses: ruby/setup-ruby@v1
+      uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3' # Not needed with a .ruby-version file
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Build Jekyll site
       run: |
         set -xo pipefail
