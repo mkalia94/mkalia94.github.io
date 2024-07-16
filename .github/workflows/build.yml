@@ -36,7 +36,7 @@ jobs:
         git add .
         git commit -q -m "Website generated"
         git checkout dev
-        git merge -s --allow-unrelated-histories ours origin/master
+        git merge --allow-unrelated-histories -s ours origin/master
         git checkout master
         git pull
         git merge -X theirs dev
