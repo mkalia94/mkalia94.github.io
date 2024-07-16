@@ -34,7 +34,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git pull
         git add .
-        git commit -m -q "Website generated"
+        git commit -q -m "Website generated"
         git checkout dev
         git merge -s ours origin/master
         git checkout master
