@@ -1,0 +1,20 @@
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+/Users/runner/hostedtoolcache/Ruby/3.3.4/arm64/bin/ruby extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240813-2443-gxr21z sitelibdir\=./.gem.20240813-2443-gxr21z clean
+
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240813-2443-gxr21z sitelibdir\=./.gem.20240813-2443-gxr21z
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240813-2443-gxr21z sitelibdir\=./.gem.20240813-2443-gxr21z install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20240813-2443-gxr21z
+
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240813-2443-gxr21z sitelibdir\=./.gem.20240813-2443-gxr21z clean
