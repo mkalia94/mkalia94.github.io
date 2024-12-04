@@ -1,18 +1,18 @@
-@article{supraL,
-  title={Detecting communities in space-time graphs with the inflated dynamic Laplacian},
+@article{froyland2024spectral,
+  title={Spectral clustering of time-evolving networks using the inflated dynamic Laplacian for graphs},
   author={Froyland, Gary and Kalia, Manu and Koltai, Peter},
-  group = {wip},
-  idea = {Community detection in time-evolving networks is a longstanding problem in network theory. In particular, the
-graph supra-Laplacian of the corresponding multiplex network has been used to characterise clusters or communities.
-In this work we port the inflated dynamic Laplacian constructed by Froyland and Koltai to graphs, which was used
-recently in the continuous domain to discover the birth and
-death of coherent sets. We look at the eigenproblem of the
-graph inflated dynamic Laplacian and present results on
-community detection and discovering balanced graph-cuts,
-motivated by classical isoperimetric problems.},
-  year={Ongoing},
-  slides = {DS23.pdf}
-}
+  journal={arXiv preprint arXiv:2409.11984},
+   slides = {DS23.pdf},
+   group = {preprint},
+   code={https://github.com/mkalia94/TemporalNetworks.jl/},
+   abstract = {Complex time-varying networks are prominent models for a wide variety of spatiotemporal phenomena.
+The functioning of networks depends crucially on their connectivity, yet reliable techniques for determining communities in spacetime networks remain elusive.
+We adapt successful spectral techniques from continuous-time dynamics on manifolds to the graph setting to fill this gap. 
+We formulate an \emph{inflated dynamic Laplacian} for graphs and develop a spectral theory to underpin the corresponding algorithmic realisations.
+We develop spectral clustering approaches for both multiplex and non-multiplex networks, based on the eigenvectors of the inflated dynamic Laplacian and specialised Sparse EigenBasis Approximation (SEBA) post-processing of these eigenvectors.
+We demonstrate that our approach can outperform the Leiden algorithm applied both in spacetime and layer-by-layer, and we analyse voting data from the US senate (where senators come and go as congresses evolve) to quantify increasing polarisation in time.},
+year={2024}
+} 
 
 
 @article{paramest,

@@ -17,5 +17,8 @@ I am a postdoc working with [Péter Koltai](http://userpage.fu-berlin.de/peterko
 - 10/23: NADCOM 23: Interesting [workshop](https://www.pks.mpg.de/nadcom23) on nonautonomous dynamics and critical transitions.
 - 1/24 - 2/24: Visiting Gary Froyland at UNSW, Sydney.
 - 5/24: [WINQ workshop](https://indico.fysik.su.se/event/8139/page/617-week-2-new-challenges-in-high-dimensional-complex-dynamical-systems) on quantum and complex systems, Stockholm.
+- 6/24: Visiting Nathan Kutz (Washington) at the Alan Turing Institute, London
+- 9/24: New paper on [Detecting communities in spacetime networks using spectral methods](https://arxiv.org/abs/2409.11984) with a fun example on US politics. 
+- 9/24: New Julia package [TemporalNetworks.jl](https://github.com/mkalia94/TemporalNetworks.jl/)!
 
 Email:  m (**dot**) (last name)  **(at)** fu-berlin **(dot)** de
