@@ -12,13 +12,10 @@ I am a postdoc working with [Péter Koltai](http://userpage.fu-berlin.de/peterko
 - Network dynamics
 
 **News**:
-- 04/23: Biophysical neural masses and EEG! [Preprint here.](https://www.biorxiv.org/content/10.1101/2023.04.07.535995v1)
-- 05/23: SIAM DS23 MS12: [Community detection in temporal dynamics and the Laplace operator](https://meetings.siam.org/sess/dsp_talk.cfm?p=126766). [Talk here.](/assets/slides/DS23.pdf)
-- 10/23: NADCOM 23: Interesting [workshop](https://www.pks.mpg.de/nadcom23) on nonautonomous dynamics and critical transitions.
-- 1/24 - 2/24: Visiting Gary Froyland at UNSW, Sydney.
 - 5/24: [WINQ workshop](https://indico.fysik.su.se/event/8139/page/617-week-2-new-challenges-in-high-dimensional-complex-dynamical-systems) on quantum and complex systems, Stockholm.
 - 6/24: Visiting Nathan Kutz (Washington) at the Alan Turing Institute, London
-- 9/24: New paper on [Detecting communities in spacetime networks using spectral methods](https://arxiv.org/abs/2409.11984) with a fun example on US politics. 
+- 9/24: Paper on [Detecting communities in spacetime networks using spectral methods](https://arxiv.org/abs/2409.11984) with a fun example on US politics. 
 - 9/24: New Julia package [TemporalNetworks.jl](https://github.com/mkalia94/TemporalNetworks.jl/)!
+- 1-2/25: Visiting Gary Froyland at UNSW, Sydney and [ANZIAM 2025](https://www.anziam.org.au/tiki-read_article.php?articleId=60).
 
 Email:  m (**dot**) (last name)  **(at)** fu-berlin **(dot)** de
