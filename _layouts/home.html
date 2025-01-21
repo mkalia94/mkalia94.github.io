@@ -8,17 +8,17 @@
   <body>
 		{% include logo.html %}
 		{% include nav.html %}
-            <section>
+            <div>
                 <img src="assets/images/manu.jpeg" align="center" alt="" width="60%" height="auto">
                 {{ page.sections[0] | markdownify }}
-            </section>
-            <section>
+            </div>
+            <div>
                 {{ page.sections[1] | markdownify }}
                 {{ page.sections[2] | markdownify }}
-            </section>
-            <section>
+            </div>
+            <div>
                 {{ page.sections[3] | markdownify }}
-            </section>
+            </div>
         {% include footer.html %}
     </body>
 </html>
