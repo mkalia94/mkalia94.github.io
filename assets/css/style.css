@@ -4,6 +4,8 @@ body	{
 	font-family: 'Lato Light';
 	font-size:100%;
 	line-height:150%;
+    margin: auto;
+    max-width=70%;
 }
 
 @font-face {
@@ -33,6 +35,7 @@ section {
   max-width: 50%;
   display: flex;
   flex-direction: column;
+  margin: auto;
 
   h1 {
     font-size: 150%;
