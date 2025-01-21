@@ -23,15 +23,15 @@ a:hover	{
 main {
   display: flex;
   flex-wrap: wrap;
-  max-width: 54rem;
   margin: 2rem 0;
   padding: 1rem;
+  width: 50%;
 }
 
 section {
   flex-basis: 0;
   flex-grow: 999;
-  min-width: 70%;
+  max-width: 70%;
   display: flex;
   flex-direction: column;
 
@@ -56,6 +56,7 @@ section {
   }
 
 }
+
 #main {
 	width: 50%;
 	margin: 0 auto;
