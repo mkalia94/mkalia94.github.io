@@ -6,29 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-	<div id="main">
+  <main>
 		{% include logo.html %}
 		{% include nav.html %}
-            <div class="small-container">
-            <div class="content">
-                <img src="assets/images/manu.jpeg" align="right" alt="" width="60%" height="auto">
-            </div>
-            <div class="content">
+            <section>
+                <img src="assets/images/manu.jpeg" align="center" alt="" width="60%" height="auto">
+            </section>
+            <section>
                 {{ page.sections[0] | markdownify }}
-            </div>
-            </div>
-            <div class="small-container">
-            <div class="content">
+            </section>
+            <section>
                 {{ page.sections[1] | markdownify }}
-            </div>
-            <div class="content">
+            </section>
+            <section>
                 {{ page.sections[2] | markdownify }}
-            </div>
-            </div>
-            <div class="content">
+            </section>
+            <section>
                 {{ page.sections[3] | markdownify }}
-            </div>
+            </section>
         {% include footer.html %}
-	</div>
+        </main>
     </body>
 </html>
