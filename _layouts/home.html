@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{site.language}}">
-  {% include head.html %}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>  
+    {% include head.html %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
   <style>
   .container {
     display: flex;
@@ -15,10 +18,19 @@
 		{% include nav.html %}
         <div class="container">
             <div>
-                {{ page.sections[0] | markdownify }}
+                <img src="assets/images/manu.jpeg" align="right" alt="" width="60%" height="auto">
             </div>
             <div>
-                <img src="assets/images/manu.jpeg" align="right" alt="" width="60%" height="auto">
+                { page.sections[0] | markdownify }
+            </div>
+            <div>
+                { page.sections[1] | markdownify }
+            </div>
+            <div>
+                { page.sections[2] | markdownify }
+            </div>
+            <div>
+                { page.sections[3] | markdownify }
             </div>
         </div>
         {% include footer.html %}
