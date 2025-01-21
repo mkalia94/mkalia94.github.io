@@ -7,10 +7,10 @@ sections:
   I am a postdoc working with [Péter Koltai](http://userpage.fu-berlin.de/peterkoltai/index.html) and [Gary Froyland](https://web.maths.unsw.edu.au/~froyland/) at FU-Berlin. In 2022 I obtained my PhD under [Hil Meijer](https://wwwhome.ewi.utwente.nl/~meijerhge/) titled 'Data, models and transitions in computational neuroscience: bottom-up and top-down approaches' at the University of Twente, see [here]({{site.url}}{{site.baseurl}}/assets/thesis.pdf).
 - |
   **Research interests**:
-    - Nonlinear dynamical systems and bifurcation theory
-    - Computational neuroscience
-    - Machine learning and dynamical systems
-    - Network dynamics
+      - Nonlinear dynamical systems and bifurcation theory
+      - Computational neuroscience
+      - Machine learning and dynamical systems
+      - Network dynamics
 - |
   **News**:
     - 5/24: [WINQ workshop](https://indico.fysik.su.se/event/8139/page/617-week-2-new-challenges-in-high-dimensional-complex-dynamical-systems) on quantum and complex systems, Stockholm.
