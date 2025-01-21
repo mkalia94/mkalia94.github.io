@@ -20,11 +20,48 @@ a:hover	{
 	text-decoration: underline;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 50%;
+}
+
+section {
+  flex-basis: 0;
+  flex-grow: 999;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 150%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  h3 {
+    font-size: 115%;
+  }
+
+  h4 {
+    font-size: 110%;
+  }
+
+  h5 {
+    font-size: 100%;
+  }
+
+}
 
 #main {
 	width: 50%;
 	margin: 0 auto;
 }
+
 
 #nav {
 	text-align:center;
@@ -63,6 +100,7 @@ a:hover	{
 
 #content {
 	text-align:center;
+    max-width: 40%;
 	margin:auto;
 	margin-top:20px;
 	padding-top:20px;
@@ -142,6 +180,12 @@ a:hover	{
     margin: 2px 1px;
     cursor: pointer;
     border-radius: 5px;
+}
+.small-container {
+  flex-grow: 1;
+  justify-content: center;
+  display: flex; 
+  align-items: center; 
 }
 
 @media screen and (max-width: 850px) {
