@@ -5,16 +5,18 @@
 	<div id="main">
 		{% include logo.html %}
 		{% include nav.html %}
-        <div id="home">
+        <div id="homenoborder">
             <img src="assets/images/manu.jpeg" align="left" alt="" width="32.5%" height="auto">
             {{page.sections[0] | markdownify}}
-		</div>
-        <div id="home">
             {{page.sections[1] | markdownify}}
+		</div>
+        <div id="homenoborder">
             {{page.sections[2] | markdownify}}
         </div>
         {{page.sections[3] | markdownify}}
+        <div id="navbottom">
         {% include footer.html %}
+        </div>
 	</div>
     </body>
 </html>

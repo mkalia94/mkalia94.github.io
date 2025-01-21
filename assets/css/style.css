@@ -35,6 +35,15 @@ a:hover	{
 	padding-bottom:5px;
 	border-bottom: 1px solid #000;
 }
+#navbottom {
+	text-align:center;
+	margin:auto;
+	margin-top:0px;
+	padding-top:0px;
+	margin-bottom:5px;
+	padding-bottom:5px;
+	border-bottom: 1px solid #000;
+}
 
 #content-left {
 	text-align:left;
@@ -50,6 +59,11 @@ a:hover	{
 	text-align:left;
 	margin: 20px 20px 20px 20px;
 	border-bottom: 1px solid #000;
+    display: inline-block
+}
+#homenoborder {
+	text-align:left;
+	margin: 20px 20px 20px 20px;
     display: inline-block
 }
 
