@@ -3,7 +3,8 @@ layout: home
 title: Home
 permalink: /
 sections:
-- I am a postdoc working with [Péter Koltai](http://userpage.fu-berlin.de/peterkoltai/index.html) and [Gary Froyland](https://web.maths.unsw.edu.au/~froyland/) at FU-Berlin. In 2022 I obtained my PhD under [Hil Meijer](https://wwwhome.ewi.utwente.nl/~meijerhge/) titled 'Data, models and transitions in computational neuroscience: bottom-up and top-down approaches' at the University of Twente, see [here]({{site.url}}{{site.baseurl}}/assets/thesis.pdf).
+- |
+  I am a postdoc working with [Péter Koltai](http://userpage.fu-berlin.de/peterkoltai/index.html) and [Gary Froyland](https://web.maths.unsw.edu.au/~froyland/) at FU-Berlin. In 2022 I obtained my PhD under [Hil Meijer](https://wwwhome.ewi.utwente.nl/~meijerhge/) titled 'Data, models and transitions in computational neuroscience: bottom-up and top-down approaches' at the University of Twente, see [here]({{site.url}}{{site.baseurl}}/assets/thesis.pdf).
 - |
   **Research interests:**
   - Nonlinear dynamical systems and bifurcation theory
@@ -17,7 +18,8 @@ sections:
   - 9/24: Paper on [Detecting communities in spacetime networks using spectral methods](https://arxiv.org/abs/2409.11984) with a fun example on US politics. 
   - 9/24: New Julia package [TemporalNetworks.jl](https://github.com/mkalia94/TemporalNetworks.jl/)!
   - 1-2/25: Visiting Gary Froyland at UNSW, Sydney and [ANZIAM 2025](https://www.anziam.org.au/tiki-read_article.php?articleId=60).
-- Email:  m (**dot**) (last name)  **(at)** fu-berlin **(dot)** de
+- |
+  Email:  m (**dot**) (last name)  **(at)** fu-berlin **(dot)** de
 ---
 
 
