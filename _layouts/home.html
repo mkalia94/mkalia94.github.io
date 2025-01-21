@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{site.language}}">
-  <head>  
-    {% include head.html %}
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+  {% include head.html %}
   <body>
+	<div id="main">
 		{% include logo.html %}
 		{% include nav.html %}
-            <div>
-                <img src="assets/images/manu.jpeg" align="center" alt="" width="60%" height="auto">
-                {{ page.sections[0] | markdownify }}
-            </div>
-            <div>
-                {{ page.sections[1] | markdownify }}
-                {{ page.sections[2] | markdownify }}
-            </div>
-            <div>
-                {{ page.sections[3] | markdownify }}
-            </div>
+        <div id="home">
+            <img src="assets/images/manu.jpeg" align="left" alt="" width="32.5%" height="auto">
+            {{page.sections[0] | markdownify}}
+		</div>
+        <div id="home">
+            {{page.sections[1] | markdownify}}
+            {{page.sections[2] | markdownify}}
+        </div>
+        {{page.sections[3] | markdownify}}
         {% include footer.html %}
+	</div>
     </body>
 </html>
