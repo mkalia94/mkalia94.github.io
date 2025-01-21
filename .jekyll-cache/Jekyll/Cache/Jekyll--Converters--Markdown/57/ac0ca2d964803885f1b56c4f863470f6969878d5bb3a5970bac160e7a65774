@@ -1,4 +1,4 @@
-I"c<h1 id="linux-ubuntu-and-nvidia-gpu-support">Linux (Ubuntu) and NVIDIA GPU support</h1>
+I"d<h1 id="linux-ubuntu-and-nvidia-gpu-support">Linux (Ubuntu) and NVIDIA GPU support</h1>
 
 <p>If you want to use <code class="language-plaintext highlighter-rouge">tensorflow-gpu</code>, <code class="language-plaintext highlighter-rouge">Flux.jl</code> or any other library that benefits from GPU parallelisation, then you need to setup:</p>
 
@@ -44,8 +44,8 @@
 
 <h3 id="1-tensorflow">1. Tensorflow</h3>
 <p>Check using the following code</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">tensorflow.python.client</span> <span class="kn">import</span> <span class="n">device_lib</span>
-<span class="k">print</span><span class="p">(</span><span class="n">device_lib</span><span class="p">.</span><span class="n">list_local_devices</span><span class="p">())</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">tensorflow.python.client</span> <span class="kn">import</span> <span class="n">device_lib</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">device_lib</span><span class="p">.</span><span class="nf">list_local_devices</span><span class="p">())</span>
 </code></pre></div></div>
 <h3 id="2-julia">2. Julia</h3>
 <p>Check with <code class="language-plaintext highlighter-rouge">CUDAnative</code> and <code class="language-plaintext highlighter-rouge">CuArrays</code> by first installing with</p>
