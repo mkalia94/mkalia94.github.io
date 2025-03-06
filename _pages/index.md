@@ -16,7 +16,7 @@ sections:
     - 9/24: Paper on [Detecting communities in spacetime networks using spectral methods](https://arxiv.org/abs/2409.11984) with a fun example on US politics. 
     - 9/24: New Julia package [TemporalNetworks.jl](https://github.com/mkalia94/TemporalNetworks.jl/)!
     - 1-2/25: Visiting Gary Froyland at UNSW, Sydney and [ANZIAM 2025](https://www.anziam.org.au/tiki-read_article.php?articleId=60).
-    - 6/25: Organising a minisymposium on machine learning and dynamics at [DDE 2025](https://websites.auth.gr/ddeu2025/minisymposia/). Reach out if you would 
+    - 6/25: Organising a minisymposium on machine learning and dynamics at [DDE 2025](https://websites.auth.gr/ddeu2025/minisymposia/). Reach out if you would like to speak! 
 - |
   Email:  m (**dot**) (last name)  **(at)** fu-berlin **(dot)** de
 ---
