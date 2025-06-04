@@ -11,7 +11,7 @@ As far as we know, the Climb the Wall initiative has not impressed upon Berlin. 
 
 We will climb together for a week from June 11-17 and circle around 6 gyms in Berlin. We'll wear sporty clothes clearly demonstrating our solidarity, be it through stickers and keychains to Palestine football shirts (that can be purchased in Sonnenallee for instance). Bring your merch! Also do contact us if you need to buy merch in terms of tshirts or tote bags, we have a quite a lot available.
 
-[**Sign up here**](https://docs.google.com/forms/d/e/1FAIpQLSf-d8RXMtvUTZMfGZ9MxcMO8w_er61BaGtJHLQMhTXz63bJ1g/viewform?usp=dialog)
+[**Sign up here!**](https://docs.google.com/forms/d/e/1FAIpQLSf-d8RXMtvUTZMfGZ9MxcMO8w_er61BaGtJHLQMhTXz63bJ1g/viewform?usp=dialog)
 
 ### The session
 We will meet together at the gym at the start of the session. You will be led for a minimum 2-hour climbing session with max 9 other folks, going all the way from stretching, bouldering basics and safety, to bouldering your way around the gym. The session leader will always have tabs on you. After, if others like, we could go together to get a bite or drink.
