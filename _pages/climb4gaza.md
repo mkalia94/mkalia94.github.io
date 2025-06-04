@@ -14,7 +14,7 @@ We will climb together for a week from June 11-17 and circle around 6 gyms in Be
 [**Sign up here**](https://docs.google.com/forms/d/e/1FAIpQLSf-d8RXMtvUTZMfGZ9MxcMO8w_er61BaGtJHLQMhTXz63bJ1g/viewform?usp=dialog)
 
 ### The session
-We will meet together at the gym at the start of the session. You will be led for a minimum 2-hour climbing session with max 9 other folks, going all the way from stretching, bouldering basics and safety, to bouldering your way around the gym. The session leader will always have tabs on you. After, if others like, we could go together to get a bite/drink.
+We will meet together at the gym at the start of the session. You will be led for a minimum 2-hour climbing session with max 9 other folks, going all the way from stretching, bouldering basics and safety, to bouldering your way around the gym. The session leader will always have tabs on you. After, if others like, we could go together to get a bite or drink.
 
 ### Costs
 Kindly note that all the boulder gyms that we will circle through are on Urban Sports Club. So if you have a membership for that, it's free! If not, a day pass is around 14-15 euros, depending on the gym. Climbing shoes are necessary, and shoe rentals are usually a maximum of 5 euros on top.  
