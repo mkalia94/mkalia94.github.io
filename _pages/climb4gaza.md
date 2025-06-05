@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ext
 title:
 permalink: /climb4gaza/
 ---
