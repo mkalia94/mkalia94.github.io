@@ -1,0 +1,19 @@
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/runner/hostedtoolcache/Ruby/3.3.9/arm64/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250820-1144-omwvw9 sitelibdir\=./.gem.20250820-1144-omwvw9 clean
+
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250820-1144-omwvw9 sitelibdir\=./.gem.20250820-1144-omwvw9
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250820-1144-omwvw9 sitelibdir\=./.gem.20250820-1144-omwvw9 install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20250820-1144-omwvw9
+
+current directory: /Users/runner/work/mkalia94.github.io/mkalia94.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250820-1144-omwvw9 sitelibdir\=./.gem.20250820-1144-omwvw9 clean
