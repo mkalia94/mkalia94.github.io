@@ -1,17 +1,12 @@
 @article{froyland2024spectral,
-  title={Spectral clustering of time-evolving networks using the inflated dynamic Laplacian for graphs},
+  title={Multi-set spectral clustering of time-evolving networks using the supra-Laplacian},
   author={Froyland, Gary and Kalia, Manu and Koltai, Peter},
   journal={arXiv preprint arXiv:2409.11984},
    slides = {anziam25.pdf},
    group = {preprint},
    preprint={https://arxiv.org/abs/2409.11984},
    code={https://github.com/mkalia94/TemporalNetworks.jl/},
-   abstract = {Complex time-varying networks are prominent models for a wide variety of spatiotemporal phenomena.
-The functioning of networks depends crucially on their connectivity, yet reliable techniques for determining communities in spacetime networks remain elusive.
-We adapt successful spectral techniques from continuous-time dynamics on manifolds to the graph setting to fill this gap. 
-We formulate an \emph{inflated dynamic Laplacian} for graphs and develop a spectral theory to underpin the corresponding algorithmic realisations.
-We develop spectral clustering approaches for both multiplex and non-multiplex networks, based on the eigenvectors of the inflated dynamic Laplacian and specialised Sparse EigenBasis Approximation (SEBA) post-processing of these eigenvectors.
-We demonstrate that our approach can outperform the Leiden algorithm applied both in spacetime and layer-by-layer, and we analyse voting data from the US senate (where senators come and go as congresses evolve) to quantify increasing polarisation in time.},
+   abstract = {Complex time-varying networks are prominent models for a wide variety of spatiotemporal phenomena. The functioning of networks depends crucially on their connectivity, yet reliable techniques for learning communities in time-evolving networks remain elusive. We adapt successful spectral techniques from continuous-time dynamics on manifolds to the graph setting to fill this gap. We consider the supra-Laplacian for graphs and develop a spectral theory to underpin the corresponding algorithmic realisations. We develop spectral clustering approaches for both multiplex and non-multiplex networks, based on the eigenvectors of the supra-Laplacian and specialised Sparse EigenBasis Approximation (SEBA) post-processing of these eigenvectors. We demonstrate that our approach can outperform the Leiden algorithm applied both in spacetime and layer-by-layer, and we analyse voting data from the US senate (where senators come and go as congresses evolve) to quantify increasing polarisation in time.},
 year={2024}
 } 
 
@@ -119,4 +114,20 @@ We find that a majority of the eigenvalues of C fall within the bounds of random
 to an influence common to all matches played during these periods.},
 }
 
+
+@article{Ziebarth2025,
+  title = {Atypical plume-like events contribute to glutamate accumulation in metabolic stress conditions},
+  volume = {28},
+  DOI = {10.1016/j.isci.2025.112256},
+  number = {4},
+  journal = {iScience},
+  publisher = {Elsevier BV},
+  author = {Ziebarth,  Tim and Pape,  Nils and Nelson,  Joel S.E. and van Alphen,  Fleur I.M. and Kalia,  Manu and Meijer,  Hil G.E. and Rose,  Christine R. and Reiner,  Andreas},
+  year = {2025},
+  month = Apr,
+  pages = {112256},
+  abstract = {Neural glutamate homeostasis is important for health and disease. Ischemic conditions  like stroke, cause imbalances in glutamate release and uptake due to energy depletion and depolarization. We here used the glutamate sensor SF-iGluSnFR(A184V) to probe how chemical ischemia affects the extracellular glutamate dynamics in slice cultures from mouse cortex. SF-iGluSnFR imaging showed spontaneous glutamate release indicating synchronous network activity, similar to calcium imaging with GCaMP6f. Glutamate imaging further revealed local, atypically large, and long-lasting plume-like release events. Plumes occurred with low frequency, independent of network activity, and persisted in tetrodotoxin (TTX). Blocking glutamate uptake with TFB-TBOA favored plumes, whereas blocking ionotropic glutamate receptors (iGluRs) suppressed plumes. During chemical ischemia plumes became more pronounced, overly abundant and contributed to large-scale glutamate accumulation. Similar plumes were previously observed in cortical spreading depression and migraine models, and they may thus be a more general consequence of glutamate uptake dysfunctions in neurological and neurodegenerative diseases.
+},
+  keywords = {pub}
+}
 
